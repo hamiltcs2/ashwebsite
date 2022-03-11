@@ -63,7 +63,6 @@ const Navbar = ({toggle}) => {
                 <NavBtn>
                     <NavBtnLink to="/request">Request Quote</NavBtnLink>
                 </NavBtn>
-                <h1></h1>
             </NavbarContainer>
         </Nav>
     </IconContext.Provider>
