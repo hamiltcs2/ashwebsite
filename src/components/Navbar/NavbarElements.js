@@ -116,7 +116,7 @@ export const NavBtnLink = styled(LinkRouter)`
 `;
 
 export const Img = styled.img`
-  width: 50%;
+  width: 45%;
   margin-top: 20px;
   margin-right: 0;
   margin-left: 10px;

@@ -1,3 +1,6 @@
+import image1 from '../../images/image1.jpg';
+import image2 from '../../images/image2.jpg';
+import image3 from '../../images/image3.jpg';
 export const homeObjOne = {
     id: 'about',
     lightBg: false,
@@ -8,7 +11,7 @@ export const homeObjOne = {
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     buttonLabel: 'Learn More',
     imgStart: false,
-    img: require('../../images/svg-1.svg').default,
+    img: image1,
     alt: 'Ashton',
     dark: true,
     primary: true,
@@ -24,7 +27,8 @@ export const homeObjTwo = {
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     buttonLabel: 'Get Quote',
     imgStart: false,
-    img: require('../../images/svg-2.svg').default,
+    img: image2,
+    // img: require('../../images/svg-2.svg').default,
     alt: 'Trees',
     dark: false,
     primary: false,
@@ -40,7 +44,7 @@ export const homeObjThree = {
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     buttonLabel: 'Get Quote',
     imgStart: false,
-    img: require('../../images/svg-3.svg').default,
+    img: image3,
     alt: 'Car',
     dark: false,
     primary: false,
