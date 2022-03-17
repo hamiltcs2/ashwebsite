@@ -17,7 +17,7 @@ const Quote = () => {
     <>
       <Container>
         <FormWrap>
-          <Icon to='/'>dolla</Icon>
+          {/* <Icon to='/'>dolla</Icon> */}
           <FormContent>
             <Form action='#'>
               <FormH1>Sign in to your account</FormH1>
