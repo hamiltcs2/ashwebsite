@@ -10,8 +10,8 @@ const Request = () => {
     }
   return (
     <>
-    <Sidebar isOpen={isOpen} toggle={toggle}/>
-    <Navbar toggle={toggle}/>
+    <Sidebar isOpen={isOpen} toggle={toggle} isHome={false}/>
+    <Navbar toggle={toggle} isHome={false}/>
       <Quote/>
       <Footer/>
     </>

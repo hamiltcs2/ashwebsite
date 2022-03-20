@@ -1,14 +1,16 @@
 import './App.css';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './pages';
 import Request from './pages/request';
+import ScrollToTop from './components/scrollToTop';
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/" component={Home} exact/>
-        <Route path="/request" component={Request} exact/>
-      </Switch>
+      <ScrollToTop/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/request" element={<Request/>}/>
+      </Routes>
     </Router>
   );
 }
