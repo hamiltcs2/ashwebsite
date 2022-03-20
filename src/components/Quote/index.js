@@ -14,14 +14,14 @@ import {
 
 const Quote = () => {
 
-  const [title, setTitle] = useState([]);
+  const [email, setEmail] = useState([]);
   const [body, setBody] = useState([]);
 
   const handleChange = (event, type) => {
-    if (type === "title") {
-      let item = title;
+    if (type === "email") {
+      let item = email;
       item = event;
-      setTitle(item);
+      setEmail(item);
     }
     if (type === "body") {
       let item = body;
@@ -33,7 +33,7 @@ const Quote = () => {
   const submit = (event) => {
     event.preventDefault();
     const payload = {
-      title: title,
+      email: email,
       body: body
     };
     axios({
@@ -51,7 +51,7 @@ const Quote = () => {
   }
 
   const resetUserInputs = () => {
-    setTitle('');
+    setEmail('');
     setBody('');
   }
 
@@ -65,8 +65,8 @@ const Quote = () => {
             <Form onSubmit={submit}>
               <FormH1>Sign in to your account</FormH1>
               <FormLabel htmlFor='for'>Email</FormLabel>
-              <FormInput type='email' id="title" value={title}
-                onChange={e => handleChange(e.target.value, "title")} required />
+              <FormInput type='email' id="email" value={email}
+                onChange={e => handleChange(e.target.value, "email")} required />
               <FormLabel htmlFor='for'>Password</FormLabel>
               <FormInput type='password' id="body" value={body}
                 onChange={e => handleChange(e.target.value, "body")} required />
