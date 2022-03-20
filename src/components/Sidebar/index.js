@@ -9,7 +9,7 @@ const Sidebar = ({isOpen, toggle, isHome, scrollID}) => {
             else
                 scroll.scrollToTop();
         }
-    }, []);
+    }, [scrollID]);
     if (isHome === false) {
         return (
             <SidebarContainer isOpen={isOpen} onClick={toggle}>

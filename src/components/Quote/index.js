@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Container,
   FormWrap,
-  Icon,
   FormContent,
   Form,
   FormH1,

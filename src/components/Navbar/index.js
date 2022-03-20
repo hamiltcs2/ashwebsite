@@ -27,7 +27,7 @@ const Navbar = ({toggle, isHome, scrollID}) => {
         return () => {
             window.removeEventListener('scroll', changeNav)
         }
-    }, []);
+    }, [scrollID]);
 
     const toggleHome = () => {
         scroll.scrollToTop();
