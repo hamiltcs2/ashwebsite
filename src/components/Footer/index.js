@@ -4,7 +4,8 @@ import {
   FaInstagram,
   FaYoutube,
   FaTwitter,
-  FaLinkedin
+  FaLinkedin,
+  FaYelp
 } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
 import {
@@ -65,6 +66,7 @@ const Footer = () => {
               <FooterLink to='/'>Facebook</FooterLink>
               <FooterLink to='/'>Youtube</FooterLink>
               <FooterLink to='/'>Twitter</FooterLink>
+              <FooterLink to='/'>Yelp</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
@@ -82,22 +84,25 @@ const Footer = () => {
                 <FaInstagram />
               </SocialIconLink>
               <SocialIconLink
-                href='//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber'
+                // href=''
                 target='_blank'
                 aria-label='Youtube'
                 rel='noopener noreferrer'
               >
                 <FaYoutube />
               </SocialIconLink>
-              <SocialIconLink
-                target='_blank'
-                aria-label='Twitter'
-                href='//www.twitter.com/briandesignz'
-              >
+              <SocialIconLink>
                 <FaTwitter />
               </SocialIconLink>
               <SocialIconLink href='/' target='_blank' aria-label='Linkedin'>
                 <FaLinkedin />
+              </SocialIconLink>
+              <SocialIconLink
+                href='//www.yelp.com/biz/ashs-arbor-care-indianapolis'
+                target='_blank'
+                aria-label='Yelp'
+              >
+                <FaYelp />
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>

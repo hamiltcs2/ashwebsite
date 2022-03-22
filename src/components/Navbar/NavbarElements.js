@@ -94,6 +94,10 @@ export const NavLinks = styled(LinkScroll)`
     // border-bottom: 3px solid #01bf71;
     border-bottom: 3px solid #00e801;
   }
+  &:hover {
+    color: #00e801;
+    transition: 0.3s ease-out;
+  }
 `;
 
 export const NavRouterLinks = styled(LinkRouter)`
@@ -108,6 +112,10 @@ export const NavRouterLinks = styled(LinkRouter)`
   &.active {
     // border-bottom: 3px solid #01bf71;
     border-bottom: 3px solid #00e801;
+  }
+  &:hover {
+    color: #00e801;
+    transition: 0.3s ease-out;
   }
 `;
 
