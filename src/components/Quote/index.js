@@ -63,15 +63,15 @@ const Quote = () => {
           {/* <Icon to='/'>dolla</Icon> */}
           <FormContent>
             <Form onSubmit={submit}>
-              <FormH1>Sign in to your account</FormH1>
+              <FormH1>Submit your information</FormH1>
               <FormLabel htmlFor='for'>Email</FormLabel>
               <FormInput type='email' id="email" value={email}
                 onChange={e => handleChange(e.target.value, "email")} required />
-              <FormLabel htmlFor='for'>Password</FormLabel>
+              <FormLabel htmlFor='for'>Body</FormLabel>
               <FormInput type='password' id="body" value={body}
                 onChange={e => handleChange(e.target.value, "body")} required />
-              <FormButton type='submit'>Continue</FormButton>
-              <Text>Forgot password</Text>
+              <FormButton type='submit'>Submit</FormButton>
+              <Text>We will get back to you as soon as possible</Text>
             </Form>
           </FormContent>
         </FormWrap>

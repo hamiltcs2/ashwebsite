@@ -20,10 +20,13 @@ import {
   SocialLogo,
   WebsiteRights,
   SocialIcons,
-  SocialIconLink
+  SocialIconLink,
+  Img
 } from './FooterElements';
 
 const Footer = () => {
+  const img= require('../../images/logo-nobackground.svg').default;
+  const alt = 'logo';
   const toggleHome = () => {
     scroll.scrollToTop();
   };
@@ -68,9 +71,9 @@ const Footer = () => {
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to='/' onClick={toggleHome}>
-              dolla
+              <Img src={img} alt={alt}/>
             </SocialLogo>
-            <WebsiteRights>dolla © 2020 All rights reserved.</WebsiteRights>
+            <WebsiteRights>Ash's Arbor Care © 2022 All rights reserved.</WebsiteRights>
             <SocialIcons>
               <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
                 <FaFacebook />

@@ -12,7 +12,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 900px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -54,7 +54,8 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  color: #01bf71;
+  // color: #01bf71;
+  color: #00e801;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;

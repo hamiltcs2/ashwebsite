@@ -95,9 +95,18 @@ export const SocialLogo = styled(Link)`
   font-weight: bold;
 `;
 
+export const Img = styled.img`
+  width: 40%;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+`;
+
 export const WebsiteRights = styled.small`
   color: #fff;
   margin-bottom: 16px;
+  width: 40%;
 `;
 
 export const SocialIcons = styled.div`
@@ -111,3 +120,4 @@ export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
 `;
+
