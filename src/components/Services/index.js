@@ -19,21 +19,42 @@ const Services = () => {
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={Icon1} />
-          <ServicesH2>Reduce Expenses</ServicesH2>
+          <ServicesH2>Pruning</ServicesH2>
           <ServicesP>
-            We help reduce your fees and increase your overall revenue.
+            We can help you remove dead wood, reduce limbs for structural integrity, or help you train young trees for longevity.
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon2} />
-          <ServicesH2>Virtual Offices</ServicesH2>
+          <ServicesH2>Removals</ServicesH2>
           <ServicesP>
-            You can access our platform online anywhere in the world.
+            Our team removes trees with safety as our primary concern.
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon3} />
-          <ServicesH2>Premium Benefits</ServicesH2>
+          <ServicesH2>Planting</ServicesH2>
+          <ServicesP>
+            We can help you plan your landscape and give environment specific species recommendations.
+          </ServicesP>
+        </ServicesCard>
+        <ServicesCard>
+          <ServicesIcon src={Icon3} />
+          <ServicesH2>Mulching</ServicesH2>
+          <ServicesP>
+            Mulch helps trees access moisture in drought and can improve access to nutrients.     
+          </ServicesP>
+        </ServicesCard>
+        <ServicesCard>
+          <ServicesIcon src={Icon3} />
+          <ServicesH2>Pest and Disease Identification</ServicesH2>
+          <ServicesP>
+            We can help you identify your trees and hone in on any pest or diseases targeting your trees. 
+          </ServicesP>
+        </ServicesCard>
+        <ServicesCard>
+          <ServicesIcon src={Icon3} />
+          <ServicesH2>Plant Health Care Consultations</ServicesH2>
           <ServicesP>
             Unlock our special membership card that returns 5% cash back.
           </ServicesP>

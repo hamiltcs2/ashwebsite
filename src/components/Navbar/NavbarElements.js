@@ -4,7 +4,8 @@ import styled from 'styled-components';
 
 export const Nav = styled.nav`
   // background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
-  background: black;
+  // background: black;
+  background: #001429;
   height: 80px;
   margin-top: -80px;
   display: flex;

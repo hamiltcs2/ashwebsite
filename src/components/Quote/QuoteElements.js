@@ -12,12 +12,12 @@ export const Container = styled.div`
   top: 0;
   // z-index: 0;
   overflow: hidden;
-  background: linear-gradient(
-    108deg,
-    rgba(1, 147, 86, 1) 0%,
-    rgba(10, 201, 122, 1) 100%
-  );
-  // background: #00e801;
+  // background: linear-gradient(
+  //   108deg,
+  //   rgba(1, 147, 86, 1) 0%,
+  //   rgba(10, 201, 122, 1) 100%
+  // );
+  background: #ACA9B2;
 `;
 
 export const FormWrap = styled.div`
@@ -61,7 +61,8 @@ export const FormContent = styled.div`
 `;
 
 export const Form = styled.form`
-  background: #010101;
+  // background: #010101;
+  background: #001429;
   max-width: 400px;
   height: auto;
   width: 100%;

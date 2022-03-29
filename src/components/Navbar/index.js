@@ -59,7 +59,7 @@ const Navbar = ({toggle, isHome, scrollID}) => {
                             </NavItem>
                         </NavMenu>
                         <NavBtn>
-                            <NavBtnLink to="/request">Request Quote</NavBtnLink>
+                            <NavBtnLink to="/request">Request a Free Quote</NavBtnLink>
                         </NavBtn>
                     </NavbarContainer>
                 </Nav>
@@ -100,7 +100,7 @@ const Navbar = ({toggle, isHome, scrollID}) => {
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="/request">Request Quote</NavBtnLink>
+                        <NavBtnLink to="/request">Request a Free Quote</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>
