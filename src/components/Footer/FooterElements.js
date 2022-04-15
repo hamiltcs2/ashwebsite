@@ -6,7 +6,7 @@ export const FooterContainer = styled.footer`
 `;
 
 export const FooterWrap = styled.div`
-  padding: 38px 24px;
+  padding: 58px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
