@@ -79,7 +79,7 @@ const Footer = () => {
             <ArborLogo to='/' style={{display: "table-cell"}} href="//www.isa-arbor.com" target="_blank">
               <Img src={arborImg} alt={'certifiedArborist'}/>
             </ArborLogo>
-            <WebsiteRights>Ash's Arbor Care © 2022 All rights reserved.</WebsiteRights>
+            <WebsiteRights>Ash's Arbor Care L.L.C. © 2022 All rights reserved.</WebsiteRights>
             <SocialIcons>
               {/* <SocialIconLink href='/' target='_blank' aria-label='Facebook'> */}
                 {/* <FaFacebook /> */}
