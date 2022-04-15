@@ -1,13 +1,13 @@
 import React from 'react';
-import Icon1 from '../../images/image1.jpg';
-import Icon2 from '../../images/image2.jpg';
+// import Icon1 from '../../images/image1.jpg';
+// import Icon2 from '../../images/image2.jpg';
 import Icon3 from '../../images/image3.jpg';
 import Icon4 from '../../images/image4.jpg';
 import Icon5 from '../../images/image5.jpg';
 import Icon6 from '../../images/image6.jpg';
 import Icon7 from '../../images/image7.jpg';
 import Icon8 from '../../images/image8.jpg';
-import Icon10 from '../../images/image10.jpg';
+// import Icon10 from '../../images/image10.jpg';
 import Icon11 from '../../images/image11.jpg';
 import {
   ServicesContainer,
