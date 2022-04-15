@@ -1,4 +1,4 @@
-import image1 from '../../images/image1.jpg';
+import image1 from '../../images/ashtonImage1.jpg';
 import image2 from '../../images/image2.jpg';
 import image3 from '../../images/image3.jpg';
 export const homeObjOne = {
@@ -6,9 +6,9 @@ export const homeObjOne = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Ashton Phelps',
-    headline: 'Lorem ipsum dolor sit amet',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    topLine: 'About Us',
+    headline: 'Ashton Phelps',
+    description: '-ISA Certified Arborist'+'\r\n'+'    IN-3659A'+'\r\n'+'Environmental Management B.S.P.A., Indiana University'+'\r\n'+'-United States Marine Infantryman',
     buttonLabel: 'Learn More',
     imgStart: false,
     img: image1,

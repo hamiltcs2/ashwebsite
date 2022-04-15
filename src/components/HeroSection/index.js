@@ -18,7 +18,8 @@ const HeroSection = () => {
                 Care for your trees with professionals you can trust
             </HeroH1>
             <HeroP>
-                 
+                At Ash's Arbor Care we value honesty and integrity. We pay close attention to the details of our work in order to balance
+                the aesthetic, safety, and health of your trees to provide you with optimal value.
             </HeroP>
             <HeroBtnWrapper>
                 <Button to="/request" 
