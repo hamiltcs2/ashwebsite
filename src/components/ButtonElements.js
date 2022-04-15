@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import {Link} from 'react-scroll';
+import { Link as LinkRouter } from 'react-router-dom';
 
-export const Button = styled(Link)`
+export const Button = styled(LinkRouter)`
     border-radius: 50px;
     // background: ${({primary}) => (primary ? '#01BF71' : '#010606')};
     background: ${({primary}) => (primary ? '#00e801' : '#010606')};
@@ -13,6 +13,7 @@ export const Button = styled(Link)`
     border: none;
     cursor: pointer;
     display: flex;
+    text-decoration: none;
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
