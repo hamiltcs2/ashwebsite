@@ -21,7 +21,7 @@ const Navbar = ({toggle, isHome, scrollID}) => {
     useEffect(() => {
         if(scrollID !== undefined) {
             if (scrollID.scrollID !== "top")
-            document.getElementById(scrollID.scrollID).scrollIntoView();
+                document.getElementById(scrollID.scrollID).scrollIntoView();
         }
         window.addEventListener('scroll', changeNav)
         return () => {
@@ -54,7 +54,7 @@ const Navbar = ({toggle, isHome, scrollID}) => {
                                 >Services</NavRouterLinks>
                             </NavItem>
                             <NavItem>
-                                <NavRouterLinks to="/" state={{scrollID: "contact"}} 
+                                <NavRouterLinks to="/" state={{scrollID: "contact"}}
                                 >Contact</NavRouterLinks>
                             </NavItem>
                         </NavMenu>

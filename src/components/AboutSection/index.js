@@ -7,14 +7,14 @@ import { AboutContainer, AboutWrapper, AboutRow, Column1, Column2, TextWrapper, 
 const AboutSection = () => {
   return (
     <>
-        <AboutContainer lightBg={false} id={'about'} name={'about'}>
+        <AboutContainer lightBg={true} id={'about'} name={'about'}>
             <AboutWrapper>
                 <AboutRow imgStart={true}>
                     <Column1>
                         <TextWrapper>
                             <TopLine>About Us</TopLine>
-                            <Heading>Ashton Phelps</Heading>
-                            <Subtitle>-ISA Certified Arborist    
+                            <Heading lightText={false}>Ashton Phelps</Heading>
+                            <Subtitle darkText={true}>-ISA Certified Arborist    
                                 <br/>IN-3659A
                                 <br/>-Environmental Management B.S.P.A., Indiana University
                                 <br/>-United States Marine Infantryman</Subtitle>

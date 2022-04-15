@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import HeroSection from '../components/HeroSection';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
-import InfoSection from '../components/InfoSection';
+// import InfoSection from '../components/InfoSection';
 import AboutSection from '../components/AboutSection';
-import {homeObjTwo, homeObjThree } from '../components/InfoSection/Data';
+// import {homeObjThree } from '../components/InfoSection/Data';
 import Services from '../components/Services';
 import Footer from '../components/Footer';
 import { useLocation } from 'react-router-dom';
@@ -24,11 +24,11 @@ const Home = () => {
         <Sidebar isOpen={isOpen} toggle={toggle} isHome={true} scrollID = {scrollID}/>
         <Navbar toggle={toggle} isHome={true} scrollID={scrollID}/>
         <HeroSection/>
+        <Services/>
         <AboutSection/>
         {/* <InfoSection{...homeObjOne}/> */}
-        <InfoSection{...homeObjTwo}/>
-        <Services/>
-        <InfoSection{...homeObjThree}/>
+        {/* <InfoSection{...homeObjTwo}/> */}
+        {/* <InfoSection{...homeObjThree}/> */}
         <Footer/>
     </>
   )

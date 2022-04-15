@@ -1,10 +1,11 @@
 import React from 'react';
+import arborImg from '../../images/certifiedArborist.png';
 import {
-  FaFacebook,
+  // FaFacebook,
   FaInstagram,
-  FaYoutube,
-  FaTwitter,
-  FaLinkedin,
+  // FaYoutube,
+  // FaTwitter,
+  // FaLinkedin,
   FaYelp
 } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
@@ -14,11 +15,12 @@ import {
   FooterLinksContainer,
   FooterLinksWrapper,
   FooterLinkItems,
-  FooterLinkTitle,
+  // FooterLinkTitle,
   FooterLink,
   SocialMedia,
   SocialMediaWrap,
   SocialLogo,
+  ArborLogo,
   WebsiteRights,
   SocialIcons,
   SocialIconLink,
@@ -26,33 +28,32 @@ import {
 } from './FooterElements';
 
 const Footer = () => {
-  const img= require('../../images/logo-nobackground.svg').default;
-  const alt = 'logo';
+  const logoImg= require('../../images/logo-nobackground.svg').default;
   const toggleHome = () => {
     scroll.scrollToTop();
   };
   return (
-    <FooterContainer>
+    <FooterContainer id="contact">
       <FooterWrap>
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to='/sign-up'>How it works</FooterLink>
-              <FooterLink to='/'>Testimonials</FooterLink>
-              <FooterLink to='/'>Careers</FooterLink>
+              {/* <FooterLinkTitle>About Us</FooterLinkTitle> */}
+              <FooterLink to='/'>ashsarborcare@gmail.com</FooterLink>
+              <FooterLink to='/'>(812) 344-6664</FooterLink>
+              {/* <FooterLink to='/'>Careers</FooterLink>
               <FooterLink to='/'>Investors</FooterLink>
-              <FooterLink to='/'>Terms of Service</FooterLink>
+              <FooterLink to='/'>Terms of Service</FooterLink> */}
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>Contact Us</FooterLinkTitle>
-              <FooterLink to='/'>Contact</FooterLink>
-              <FooterLink to='/'>Support</FooterLink>
-              <FooterLink to='/'>Destinations</FooterLink>
-              <FooterLink to='/'>Sponsorships</FooterLink>
+              {/* <FooterLinkTitle>Contact Us</FooterLinkTitle> */}
+              <FooterLink to='/' style={{display: "table-cell"}} href="//www.treesaregood.org/treeowner/treeownersmanual" target="_blank">Tree Owners Manual</FooterLink>
+              <FooterLink to='/' style={{display: "table-cell"}} href="//www.treesaregood.org/treeowner/whyhireanarborist" target="_blank">Why hire an Arborist?</FooterLink>
+              {/* <FooterLink to='/'>Destinations</FooterLink>
+              <FooterLink to='/'>Sponsorships</FooterLink> */}
             </FooterLinkItems>
           </FooterLinksWrapper>
-          <FooterLinksWrapper>
+          {/* <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>Videos</FooterLinkTitle>
               <FooterLink to='/'>Submit Video</FooterLink>
@@ -68,35 +69,38 @@ const Footer = () => {
               <FooterLink to='/'>Twitter</FooterLink>
               <FooterLink to='/'>Yelp</FooterLink>
             </FooterLinkItems>
-          </FooterLinksWrapper>
+          </FooterLinksWrapper> */}
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to='/' onClick={toggleHome}>
-              <Img src={img} alt={alt}/>
+              <Img src={logoImg} alt={'logo'}/>
             </SocialLogo>
+            <ArborLogo to='/' style={{display: "table-cell"}} href="//www.isa-arbor.com" target="_blank">
+              <Img src={arborImg} alt={'certifiedArborist'}/>
+            </ArborLogo>
             <WebsiteRights>Ash's Arbor Care © 2022 All rights reserved.</WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
-                <FaFacebook />
-              </SocialIconLink>
+              {/* <SocialIconLink href='/' target='_blank' aria-label='Facebook'> */}
+                {/* <FaFacebook /> */}
+              {/* </SocialIconLink> */}
               <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
                 <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink
+              {/* <SocialIconLink
                 // href=''
                 target='_blank'
                 aria-label='Youtube'
                 rel='noopener noreferrer'
               >
                 <FaYoutube />
-              </SocialIconLink>
-              <SocialIconLink>
+              </SocialIconLink> */}
+              {/* <SocialIconLink>
                 <FaTwitter />
-              </SocialIconLink>
-              <SocialIconLink href='/' target='_blank' aria-label='Linkedin'>
+              </SocialIconLink> */}
+              {/* <SocialIconLink href='/' target='_blank' aria-label='Linkedin'>
                 <FaLinkedin />
-              </SocialIconLink>
+              </SocialIconLink> */}
               <SocialIconLink
                 href='//www.yelp.com/biz/ashs-arbor-care-indianapolis'
                 target='_blank'

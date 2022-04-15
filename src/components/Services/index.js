@@ -59,6 +59,13 @@ const Services = () => {
             Unlock our special membership card that returns 5% cash back.
           </ServicesP>
         </ServicesCard>
+        <ServicesCard>
+          <ServicesIcon src={Icon3} />
+          <ServicesH2>Cabling and Bracing</ServicesH2>
+          <ServicesP>
+            Unlock our special membership card that returns 5% cash back.
+          </ServicesP>
+        </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>
   );

@@ -36,9 +36,11 @@ export const FooterLinkItems = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 16px;
+  // margin: 16px;
+  margin: 0 200px;
   text-align: left;
-  width: 160px;
+  // width: 160px;
+  width: 200px;
   box-sizing: border-box;
   color: #fff;
 
@@ -54,11 +56,12 @@ export const FooterLinkTitle = styled.h1`
   margin-bottom: 16px;
 `;
 
-export const FooterLink = styled(Link)`
+export const FooterLink = styled.a`
   color: #fff;
   text-decoration: none;
   margin-bottom: 0.5rem;
-  font-size: 14px;
+  // font-size: 14px;
+  font-size: 16px;
 
   &:hover {
     // color: #01bf71;
@@ -96,12 +99,23 @@ export const SocialLogo = styled(Link)`
   font-weight: bold;
 `;
 
+export const ArborLogo = styled.a`
+  color: #fff;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  font-weight: bold;
+`;
+
 export const Img = styled.img`
   width: 40%;
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 0;
-  padding-right: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const WebsiteRights = styled.small`
@@ -114,7 +128,8 @@ export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
+  // width: 240px;
+  width: 60px;
 `;
 
 export const SocialIconLink = styled.a`
