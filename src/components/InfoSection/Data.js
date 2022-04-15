@@ -8,7 +8,7 @@ export const homeObjOne = {
     lightTextDesc: true,
     topLine: 'About Us',
     headline: 'Ashton Phelps',
-    description: '-ISA Certified Arborist'+'\r\n'+'    IN-3659A'+'\r\n'+'Environmental Management B.S.P.A., Indiana University'+'\r\n'+'-United States Marine Infantryman',
+    description: '-ISA Certified Arborist IN-3659A Environmental Management B.S.P.A., Indiana University -United States Marine Infantryman',
     buttonLabel: 'Learn More',
     imgStart: false,
     img: image1,
