@@ -45,6 +45,7 @@ export const ServicesCard = styled.div`
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
+  // max-height: 340px;
   max-height: 340px;
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -54,6 +55,13 @@ export const ServicesCard = styled.div`
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+  }
+  @media screen and (min-width: 768px) {
+    height: 340px;
+  }
+  @media screen and (min-width: 1000px) {
+    max-height: 400px;
+    height: 400px;
   }
 `;
 
