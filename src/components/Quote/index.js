@@ -45,8 +45,9 @@ const Quote = () => {
       console.log('Data has been sent to the server');
       resetUserInputs();
     })
-    .catch(() => {
+    .catch((error) => {
       console.log('Internal server error');
+      console.log('Error is '+error);
     });
   }
 
