@@ -28,56 +28,56 @@ const Services = () => {
     <ServicesContainer id='services'>
       <ServicesH1>Our Services</ServicesH1>
       <ServicesWrapper>
-        <ServicesCard>
+        <ServicesCard to ="/request" state={{services: 0}}>
           <ServicesIcon src={Icon12} />
           <ServicesH2>Pruning</ServicesH2>
           <ServicesP>
             We can help you remove dead wood, reduce limbs for structural integrity, or help you train young trees for longevity.
           </ServicesP>
         </ServicesCard>
-        <ServicesCard>
+        <ServicesCard to ="/request" state={{services: 1}}>
           <ServicesIcon src={Icon6} />
           <ServicesH2>Removals</ServicesH2>
           <ServicesP>
             Our team removes trees with safety as our primary concern.
           </ServicesP>
         </ServicesCard>
-        <ServicesCard>
+        <ServicesCard to ="/request" state={{services: 2}}>
           <ServicesIcon src={Icon4} />
           <ServicesH2>Planting</ServicesH2>
           <ServicesP>
             We can help you plan your landscape and give environment specific species recommendations.
           </ServicesP>
         </ServicesCard>
-        <ServicesCard>
+        <ServicesCard to ="/request" state={{services: 3}}>
           <ServicesIcon src={Icon14} />
           <ServicesH2>Mulching</ServicesH2>
           <ServicesP>
             Mulch helps trees access moisture in drought and can improve access to nutrients.     
           </ServicesP>
         </ServicesCard>
-        <ServicesCard>
+        <ServicesCard to ="/request" state={{services: 4}}>
           <ServicesIcon src={Icon7} />
           <ServicesH2>Pest and Disease Identification</ServicesH2>
           <ServicesP>
             We can help you identify your trees and hone in on any pest or diseases targeting your trees. 
           </ServicesP>
         </ServicesCard>
-        <ServicesCard>
+        <ServicesCard to ="/request" state={{services: 5}}>
           <ServicesIcon src={Icon5} />
           <ServicesH2>Plant Health Care Consultations</ServicesH2>
           <ServicesP>
           Our arborists provide you with information to make the best decisions about the preservation and safety of your trees.
           </ServicesP>
         </ServicesCard>
-        <ServicesCard>
+        <ServicesCard to ="/request" state={{services: 6}}>
           <ServicesIcon src={Icon13} />
           <ServicesH2>Cabling and Bracing</ServicesH2>
           <ServicesP>
           With the installation of dynamic bracing systems and cabling, we can help you mitigate risk around your property and maintain the structural integrity of your trees. 
           </ServicesP>
         </ServicesCard>
-        <ServicesCard>
+        <ServicesCard to ="/request" state={{services: 7}}>
           <ServicesIcon src={Icon15} />
           <ServicesH2>Stump Grinding</ServicesH2>
           <ServicesP>

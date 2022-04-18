@@ -1,80 +1,34 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import './Form.css';
+import FormSignup from './FormSignup';
+import FormSuccess from './FormSuccess';
 import {
   Container,
-  FormWrap,
-  FormContent,
-  Form,
-  FormH1,
-  FormLabel,
-  FormInput,
-  FormButton,
-  Text
-} from './QuoteElements';
+  FormContainer,
+  FormWrap
+} from './FormElements';
 
-const Quote = () => {
-
-  const [email, setEmail] = useState([]);
-  const [body, setBody] = useState([]);
-
-  const handleChange = (event, type) => {
-    if (type === "email") {
-      let item = email;
-      item = event;
-      setEmail(item);
-    }
-    if (type === "body") {
-      let item = body;
-      item = event;
-      setBody(item);
-    }
-  };
-
-  const submit = (event) => {
-    event.preventDefault();
-    const payload = {
-      email: email,
-      body: body
-    };
-    axios({
-      url: 'api/save',
-      method: 'POST',
-      data: payload
-    })
-    .then(() => {
-      console.log('Data has been sent to the server');
-      resetUserInputs();
-    })
-    .catch((error) => {
-      console.log('Internal server error');
-      console.log('Error is '+error);
-    });
+const Quote = ({services}) => {
+  let selector = -1;
+  if(services !== undefined) {
+    selector = services.services;
   }
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const resetUserInputs = () => {
-    setEmail('');
-    setBody('');
+  const submitForm = () => {
+    setIsSubmitted(true);
   }
-
-
   return (
     <>
       <Container>
         <FormWrap>
-          {/* <Icon to='/'>dolla</Icon> */}
-          <FormContent>
-            <Form onSubmit={submit}>
-              <FormH1>Submit your information</FormH1>
-              <FormLabel htmlFor='for'>Email</FormLabel>
-              <FormInput type='email' id="email" value={email}
-                onChange={e => handleChange(e.target.value, "email")} required />
-              <FormLabel htmlFor='for'>Body</FormLabel>
-              <FormInput type='password' id="body" value={body}
-                onChange={e => handleChange(e.target.value, "body")} required />
-              <FormButton type='submit'>Submit</FormButton>
-              <Text>We will get back to you as soon as possible</Text>
-            </Form>
-          </FormContent>
+              <FormContainer>
+                {!isSubmitted ? (
+                  <FormSignup services={selector} submitForm={submitForm} />
+                  ) : (
+                  <FormSuccess />
+                  )}
+              </FormContainer>
         </FormWrap>
       </Container>
     </>

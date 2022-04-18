@@ -1,3 +1,4 @@
+import { Link as LinkRouter } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const ServicesContainer = styled.div`
@@ -35,7 +36,7 @@ export const ServicesWrapper = styled.div`
   }
 `;
 
-export const ServicesCard = styled.div`
+export const ServicesCard = styled(LinkRouter)`
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -44,6 +45,8 @@ export const ServicesCard = styled.div`
   // max-height: 340px;
   max-height: 360px;
   padding: 30px;
+  text-decoration: none;
+  color: black;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
 
