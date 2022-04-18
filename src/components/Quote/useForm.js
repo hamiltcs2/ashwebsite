@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 
 const useForm = (callback, validate, services, options) => {
   const [values, setValues] = useState({
@@ -43,32 +42,10 @@ const useForm = (callback, validate, services, options) => {
         })
       }
       if (Object.keys(errors).length === 0 && isSubmitting) {
-        const payload = {
-          name: values.name,
-          email: values.email,
-          phone: values.phone,
-          address: values.address,
-          city: values.city,
-          zipcode: values.zipcode,
-          service: values.service,
-          info: values.info
-      };
-      axios({
-        url: 'api/save',
-        method: 'POST',
-        data: payload
-      })
-      .then(() => {
-        console.log('Data has been sent to the server');
-      })
-      .catch((error) => {
-        console.log('Internal server error');
-        console.log('Error is '+error);
-      });
-        callback();
+        callback(values);
       }
     },
-    [errors]
+    [callback, errors, isSubmitting, options, services, values]
   );
 
   return { handleChange, handleSubmit, values, errors };
