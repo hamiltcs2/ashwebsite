@@ -74,7 +74,8 @@ const Services = () => {
           <ServicesIcon src={Icon13} />
           <ServicesH2>Cabling and Bracing</ServicesH2>
           <ServicesP>
-          With the installation of dynamic bracing systems and cabling, we can help you mitigate risk around your property and maintain the structural integrity of your trees. 
+          With the installation of dynamic bracing systems and cabling,
+          {/* we can help you mitigate risk around your property and maintain the structural integrity of your trees.  */}
           </ServicesP>
         </ServicesCard>
         <ServicesCard to ="/request" state={{services: 7}}>
