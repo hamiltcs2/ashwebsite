@@ -29,8 +29,10 @@ import {
 
 const Footer = () => {
   const logoImg= require('../../images/logo-nobackground.svg').default;
-  const toggleHome = () => {
+  const toggleHome = () => 
+  {
     scroll.scrollToTop();
+    console.log(6+1+"7");
   };
   return (
     <FooterContainer id="contact">
