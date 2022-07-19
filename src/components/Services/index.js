@@ -76,6 +76,7 @@ const Services = () => {
           <ServicesP>
           With the installation of dynamic bracing systems and cabling,
           {/* we can help you mitigate risk around your property and maintain the structural integrity of your trees.  */}
+          we can help you mitigate risk around your property and maintain the structural integrity of your trees. 
           </ServicesP>
         </ServicesCard>
         <ServicesCard to ="/request" state={{services: 7}}>
